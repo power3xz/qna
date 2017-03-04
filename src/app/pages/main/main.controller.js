@@ -8,12 +8,33 @@ import moment from 'moment';
 function MainController($log, $state, api) {
   'ngInject';
   const self = this;
-  self.questions = [{
-    title:" hi"
-  }];
-  api.query({offset: 0, limit: 3}, (questions) => {
-    self.questions = questions;
-  });
+  self.questions = [];
+  self.offset = 0;
+  self.limit = 3;
+  self.step = 3;
+
+  self.clickMore = updateQuestions;
+  self.writeQuestion = () => $state.go('compose');
+
+  updateQuestions();
+
+  function updateQuestions() {
+    api.query({offset: self.offset, limit: self.limit}, (questions) => {
+      self.offset += self.step;
+      if (questions.length < 1) {
+        const empty = {
+          title: '더이상 게시물이 없습니다.'
+        };
+        self.questions.push(empty);
+        self.clickMore = null;
+      } else {
+        questions.forEach((question) => {
+          self.questions.push(question);
+        });
+      }
+    });
+  }
 }
+
 
 export default MainController;
