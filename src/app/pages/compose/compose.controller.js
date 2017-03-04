@@ -24,13 +24,13 @@ function ComposeController($log, $state, api) {
   function submitQuestion() {
     if (isValidQuestion(self.question)) {
       let q = new api(self.question);
-      api.$save(() => {
+      q.$save(() => {
         $state.go('main');
       });
     }
   }
 
-  function isValidQUestion() {
+  function isValidQuestion() {
     return true;
   }
 }
