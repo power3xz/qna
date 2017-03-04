@@ -5,6 +5,6 @@ export default function (app) {
     .factory('api', apiFactory);
 
   function apiFactory($resource) {
-    return $resource('http://localhost:8081/qna/:id');
+    return $resource('http://localhost:8080/qna/:id');
   }
 }

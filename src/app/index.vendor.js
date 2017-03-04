@@ -16,6 +16,8 @@ import "jquery";
 
 import "angular-resource";
 
+import "font-awesome/css/font-awesome.css";
+
 
 
 // local scripts

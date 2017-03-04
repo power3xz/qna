@@ -1,0 +1,45 @@
+$eb: #EBEBEB;
+
+.questions {
+  background-color: #382E2D;
+  color: white;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.questions-header {
+  text-align: center;
+  padding: 12px;
+}
+
+.card-wrapper {
+  overflow: hidden;
+  margin: 0 auto 12px auto;
+}
+
+.card {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  padding: 36px;
+  border: 1px solid $eb;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.answer {
+  padding-left: 6px;
+  border-left: 1px solid $eb;
+}
+
+.more {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  padding: 12px;
+  border: 1px solid $eb;
+  margin: 0 auto;
+  max-width: 960px;
+  text-align: center;
+  color: #CBCBCB;
+}

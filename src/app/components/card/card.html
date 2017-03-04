@@ -1,0 +1,15 @@
+<div class="col-sm-12">
+    <div class="card">
+        <label class="question-label">{{vm.question.title}}</label>
+        <p class="question">
+            {{vm.question.body}}
+        </p>
+        <label class="question-date">{{vm.question.createdAt}}</label>
+        <div class="answer" ng-repeat="answer in vm.question.answers">
+            <label class="answer-label">{{answer.lawyer + ' 변호사의 답변'}}</label>
+            <p class="answer-body">
+               {{answer.body}}
+            </p>
+        </div>
+    </div>
+</div>
