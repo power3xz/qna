@@ -27,6 +27,7 @@ $eb: #EBEBEB;
   max-width: 960px;
 }
 
+
 .answer {
   padding-left: 6px;
   border-left: 1px solid $eb;
@@ -42,4 +43,68 @@ $eb: #EBEBEB;
   max-width: 960px;
   text-align: center;
   color: #CBCBCB;
+}
+
+.compose-title {
+    width: 100%;
+    height: 49px;
+    padding: 30px;
+    max-width: 960px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.compose-body {
+  width: 100%;
+  height: 160px;
+  padding: 12px 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  display: block;
+  resize: none;
+  border-top: 0;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.question-detail {
+  width: 100%;
+  max-width: 960px;
+  padding: 30px;
+
+  label {
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+  }
+}
+
+.answer-detail {
+  width: 100%;
+  max-width: 960px;
+  padding: 12px 30px;
+}
+
+.lawyer-answer {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.article-btn-wrap {
+  background-color: #FBFBFB;
+  height: 50px;
+  text-align: right;
+  padding-right: 30px;
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    margin-right: 12px;
+    color: #BFBFBF;
+    cursor: pointer;
+  }
 }

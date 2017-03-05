@@ -11,15 +11,15 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <input ng-model="edit.detail.title" type="text" placeholder="질문을 작성해 주세요" />
-            <textarea ng-model="edit.detail.body"></textarea>
+            <input class="compose-title" ng-model="edit.detail.title" type="text" placeholder="질문을 작성해 주세요" />
+            <textarea class="compose-body" ng-model="edit.detail.body" placeholder="내용을 작성해 주세요."></textarea>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-12" ng-repeat="answer in edit.detail.answers">
-            <input ng-model="answer.lawyer" type="text" placeholder="변호사 이름을 입력해 주세요." />
-            <textarea ng-model="answer.body"></textarea>
+        <div class="col-sm-12 mt-12" ng-repeat="answer in edit.detail.answers">
+            <input class="compose-title" ng-model="answer.lawyer" type="text" placeholder="변호사 이름을 입력해 주세요." />
+            <textarea class="compose-body" ng-model="answer.body" placeholder="내용을 작성해 주세요."></textarea>
         </div>
         <div class="col-sm-12">
             <button class="btn btn-warning" ng-click="edit.addAnswer()"><i class="fa fa-plus"></i>답변 추가하기</button>

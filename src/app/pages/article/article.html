@@ -6,20 +6,27 @@
     </div>
     <div class="row">
         <div class="col-sm-12">
-            <label>{{article.detail.title}}</label>
-            <p>{{article.detail.body}}</p>
+            <div class="question-detail">
+                <label>{{article.detail.title}}</label>
+                <p>{{article.detail.body}}</p>
+                <p>{{article.detail.createdAt}}</p>
+            </div>
         </div>
     </div>
+    <div class="row article-btn-wrap">
+        <div class="btn-modfy" ng-click="article.modifyQuestion()">게시물 수정</div>
+        <div class="btn-delete" ng-click="article.deleteQuestion()">게시물 삭제</div>
+    </div>
+
     <div class="row">
         <div class="col-sm-12">
-            <button class="btn" ng-click="article.modifyQuestion()">게시물 수정</button>
-            <button class="btn" ng-click="article.deleteQuestion()">게시물 삭제</button>
+            <label class="lawyer-answer">변호사 답변 {{article.detail.answers.length}}개</label>
         </div>
-    </div>
-    <div class="row">
         <div class="col-sm-12" ng-repeat="answer in article.detail.answers">
-            <label>{{answer.lawyer}}</label>
-            <p>{{answer.body}}</p>
+            <div class="answer-detail">
+                <label>{{answer.lawyer}}</label>
+                <p>{{answer.body}}</p>
+            </div>
         </div>
     </div>
 
