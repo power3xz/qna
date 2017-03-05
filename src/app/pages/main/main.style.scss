@@ -14,7 +14,7 @@ $eb: #EBEBEB;
 
 .card-wrapper {
   overflow: hidden;
-  margin: 0 auto 12px auto;
+  margin: 12px auto;
 }
 
 .card {
@@ -86,11 +86,13 @@ $eb: #EBEBEB;
   width: 100%;
   max-width: 960px;
   padding: 12px 30px;
+  background-color: white;
 }
 
 .lawyer-answer {
   padding-left: 30px;
   margin-top: 30px;
+  color: #888888;
 }
 
 .article-btn-wrap {
@@ -107,4 +109,20 @@ $eb: #EBEBEB;
     color: #BFBFBF;
     cursor: pointer;
   }
+}
+
+.answers {
+  background-color: #EBEBEB;
+  padding-bottom: 12px;
+}
+
+.btn-write {
+  border: 0;
+  background-color: #FF4E00;
+  display: inline-block;
+  color: white;
+  padding: 6px 24px;
+  right: 15px;
+  position: absolute;
+  font-size: 12px;
 }
