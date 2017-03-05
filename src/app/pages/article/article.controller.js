@@ -27,9 +27,12 @@ function ArticleController($log, $state, $stateParams, api) {
   }
 
   function deleteQuestion() {
-    api.delete({ id: self.detail.id }, () => {
-      $state.go('main');
-    });
+    const bool = confirm('삭제 하시겠습니까?');
+    if (bool) {
+      api.delete({ id: self.detail.id }, () => {
+        $state.go('main');
+      });
+    }
   }
 }
 

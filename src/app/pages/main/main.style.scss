@@ -84,7 +84,6 @@ $eb: #EBEBEB;
 
 .answer-detail {
   width: 100%;
-  max-width: 960px;
   padding: 12px 30px;
   background-color: white;
 }
@@ -135,7 +134,7 @@ $eb: #EBEBEB;
   display: block;
   width: 100%;
   max-width: 960px;
-  margin: 12px 0;
+  margin: 12px auto;
   padding: 12px;
   text-align: center;
   font-size: 16px;
@@ -149,7 +148,7 @@ $eb: #EBEBEB;
   display: block;
   width: 100%;
   max-width: 960px;
-  margin: 24px 0 12px 0;
+  margin: 24px auto 12px auto;
   padding: 12px;
   text-align: center;
   font-size: 16px;
