@@ -126,3 +126,34 @@ $eb: #EBEBEB;
   position: absolute;
   font-size: 12px;
 }
+
+.btn-add-wrap, .btn-complete-wrap {
+  padding: 0 15px;
+}
+
+.btn-add {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 12px 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #EAEAEA;
+  border: 1px solid #CBCBCB;
+  color: #888888;
+  cursor: pointer;
+}
+
+.btn-complete {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 24px 0 12px 0;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+  background-color: #FF4E00;
+  color: white;
+  cursor: pointer;
+}

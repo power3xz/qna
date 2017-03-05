@@ -24,7 +24,7 @@ function MainController($log, $state, api) {
       self.offset += self.step;
       if (questions.length < 1) {
         const empty = {
-          title: '더이상 게시물이 없습니다.'
+          title: '더 이상 가져올 게시물이 존재하지 않습니다'
         };
         self.questions.push(empty);
         self.clickMore = null;

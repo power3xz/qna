@@ -21,10 +21,13 @@
             <input class="compose-title" ng-model="answer.lawyer" type="text" placeholder="변호사 이름을 입력해 주세요." />
             <textarea class="compose-body" ng-model="answer.body" placeholder="내용을 작성해 주세요."></textarea>
         </div>
-        <div class="col-sm-12">
-            <button class="btn btn-warning" ng-click="edit.addAnswer()"><i class="fa fa-plus"></i>답변 추가하기</button>
-            <button class="btn btn-warning" ng-click="edit.submitQuestion()">글작성 완료하기</button>
-        </div>
+    </div>
+
+    <div class="row btn-add-wrap">
+        <div class="btn-add" ng-click="edit.addAnswer()"><i class="fa fa-plus"></i>답변 추가하기</div>
+    </div>
+    <div class="row btn-complete-wrap">
+        <div class="btn-complete" ng-click="edit.submitQuestion()">글수정 완료하기</div>
     </div>
 
 
