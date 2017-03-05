@@ -8,10 +8,11 @@ function routeConfig($stateProvider) {
 
   $stateProvider
     .state('article', {
-      url: '/article',
+      url: '/article/:id',
       templateUrl: articleTpl,
       controller: articleController,
-      controllerAs: 'article'
+      controllerAs: 'article',
+      params: { detail: null }
     });
 
 }

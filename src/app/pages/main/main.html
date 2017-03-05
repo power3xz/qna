@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="row card-wrapper">
-        <question-card ng-repeat="question in main.questions" question="question"></question-card>
+        <question-card ng-click="main.clickDetail(question)" ng-repeat="question in main.questions" question="question"></question-card>
         <div class="col-sm-12">
             <div class="more" ng-click="main.clickMore()">더보기</div>
         </div>

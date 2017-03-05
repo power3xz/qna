@@ -15,6 +15,7 @@ function MainController($log, $state, api) {
 
   self.clickMore = updateQuestions;
   self.writeQuestion = () => $state.go('compose');
+  self.clickDetail = clickDetail;
 
   updateQuestions();
 
@@ -32,6 +33,12 @@ function MainController($log, $state, api) {
           self.questions.push(question);
         });
       }
+    });
+  }
+
+  function clickDetail(question) {
+    api.query({id: question.id}, (detail) => {
+      $state.go('article', {id: question.id, detail: detail[0] });
     });
   }
 }

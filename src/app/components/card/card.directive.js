@@ -20,8 +20,6 @@ function cardTComponent($log) {
 
   function CardController ($scope) {
     'ngInject';
-    console.log($scope);
-	  $log.debug('Hello from footer controller!');
   }
 
 }
