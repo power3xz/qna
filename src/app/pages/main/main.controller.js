@@ -37,9 +37,7 @@ function MainController($log, $state, api) {
   }
 
   function clickDetail(question) {
-    api.query({id: question.id}, (detail) => {
-      $state.go('article', {id: question.id, detail: detail[0] });
-    });
+    $state.go('article.id', { id: question.id });
   }
 }
 

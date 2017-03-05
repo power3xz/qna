@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row questions">
+        <div class="col-sm-12">
+            <label>게시물 수정</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 questions-header">
+            <label>질문과 답변을 작성해 주세요</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <input ng-model="edit.detail.title" type="text" placeholder="질문을 작성해 주세요" />
+            <textarea ng-model="edit.detail.body"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12" ng-repeat="answer in edit.detail.answers">
+            <input ng-model="answer.lawyer" type="text" placeholder="변호사 이름을 입력해 주세요." />
+            <textarea ng-model="answer.body"></textarea>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-warning" ng-click="edit.addAnswer()"><i class="fa fa-plus"></i>답변 추가하기</button>
+            <button class="btn btn-warning" ng-click="edit.submitQuestion()">글작성 완료하기</button>
+        </div>
+    </div>
+
+
+
+    <!--<div class="row card-wrapper">
+        <question-card ng-repeat="question in main.questions" question="question"></question-card>
+        <div class="col-sm-12">
+            <div class="more" ng-click="main.clickMore()">더보기</div>
+        </div>
+    </div>-->
+</div>
